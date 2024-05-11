@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
                 putExtra(EXTRA_EMAIL, arrayOf(amb.toEt.text.toString()))
                 putExtra(EXTRA_CC, arrayOf(amb.ccEt.text.toString()))
                 putExtra(EXTRA_BCC, arrayOf(amb.bccEt.text.toString()))
-                putExtra(EXTRA_SUBJECT, amb.subjectEt.text.toString())
-                putExtra(EXTRA_TEXT, amb.messageEt.text.toString())
+                putExtra(EXTRA_SUBJECT, arrayOf(amb.subjectEt.text.toString()))
+                putExtra(EXTRA_TEXT, arrayOf(amb.messageEt.text.toString()))
                 type = "message/rfc822"
                 data = Uri.parse("mailto:")
             }
